@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.mfritsch.ucsmilleniumfalcon.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Switch
+        android:id="@+id/impulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/sublight_drives"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/landing_feet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/landing_gear"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/impulse" />
+
+    <Switch
+        android:id="@+id/cockpit_lights"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cockpit_lights"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/landing_feet" />
+
+    <Switch
+        android:id="@+id/cockpit_fittings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cockpit_fittings"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/cockpit_lights" />
+
+    <Switch
+        android:id="@+id/position_lights"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/forward_floodights"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/cockpit_fittings" />
+
+    <Switch
+        android:id="@+id/corridor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/main_hold"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/position_lights" />
+
+    <Switch
+        android:id="@+id/entrance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/boarding_ramp"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/corridor" />
+
+    <Switch
+        android:id="@+id/lower_weapons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/weapons_low"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/entrance" />
+
+    <Switch
+        android:id="@+id/uppor_weapons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/weapons_up"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/lower_weapons" />
+
+    <TextView
+        android:id="@+id/conection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/impulse"
+        app:layout_constraintRight_toRightOf="@+id/impulse"
+        app:layout_constraintTop_toBottomOf="@+id/uppor_weapons" />
+
+
+</android.support.constraint.ConstraintLayout>

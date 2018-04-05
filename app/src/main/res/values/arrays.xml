@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>German</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>en</item>
+        <item>de</item>
+    </string-array>
+
+    <string-array name="country_flags">
+        <item>@drawable/en</item>
+        <item>@drawable/de</item>
+    </string-array>
+
+</resources>
+

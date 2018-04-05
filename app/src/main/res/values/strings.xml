@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">UCS Millenium Falcon</string>
+    <string name="action_settings2">Settings2</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disonnect</string>
+    <string name="action_language">Language</string>
+    <string name="action_language2">Language2</string>
+    <string name="action_log">Log</string>
+    <string name="action_about">About</string>
+
+    <string name="sublight_drives">Sublight drivers</string>
+    <string name="weapons_up">Upper quad laser cannon</string>
+    <string name="weapons_low">Low quad laser cannon</string>
+    <string name="forward_floodights">Forward floodlights</string>
+    <string name="cockpit_lights">Cockpit Lights</string>
+    <string name="cockpit_fittings">Cockpit Fittings</string>
+    <string name="main_hold">Main hold</string>
+    <string name="boarding_ramp">Boarding ramp</string>
+    <string name="landing_gear">Landing gear</string>
+
+    <string name="connection">Connection to %1$s and port %2$d: %3$s</string>
+
+    <string name="unable_connect">Unable connect to</string>
+
+    <string name="about_text">Version 0.1 (BETA) <b>www.mfritsch.net</b> Thanks for visiting The Code of a UCS Millenium Falcon</string>
+</resources>
