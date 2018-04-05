@@ -80,10 +80,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 //Log.v(TAG, "Switch State impulse - " + isChecked);
 
-                if (sIPAddress.equals("Not defined")) {
-                    Toast.makeText(getApplicationContext(), "Please set first the IP of the Millenium Falcon", Toast.LENGTH_LONG).show();
-                    Logging.writeLog(TAG, "Please set first the IP of the Millenium Falcon" + isChecked);
-                } else {
+                if (checkIPAddress()) {
                     Logging.writeLog(TAG, "Switch State impulse - " + isChecked);
                     MediaPlayer ring2 = MediaPlayer.create(MainActivity.this, R.raw.falcon_fly);
                     ring.stop();
@@ -102,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
                     myNet.start();
                 }
             }
-
         });
 
         Switch landing_feetSwitch = findViewById(R.id.landing_feet);
@@ -112,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 Logging.writeLog(TAG, "Switch State landing gear - " + isChecked);
             }
-
         });
     }
 
@@ -488,5 +483,15 @@ public class MainActivity extends AppCompatActivity {
     private void updateConnection() {
         String text = getString(R.string.connection, sIPAddress, iPort, "success");
         textElement.setText(text); //leave this line to assign a string resource
+    }
+
+    private boolean checkIPAddress() {
+        if (sIPAddress.equals("Not defined")) {
+            return false;
+            //Toast.makeText(getApplicationContext(), "Please set first the IP of the Millenium Falcon", Toast.LENGTH_LONG).show();
+            // Logging.writeLog(TAG, "Please set first the IP of the Millenium Falcon");
+        } else {
+            return true;
+        }
     }
 }
