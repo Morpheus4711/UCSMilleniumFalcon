@@ -109,5 +109,4 @@
         app:layout_constraintRight_toRightOf="@+id/impulse"
         app:layout_constraintTop_toBottomOf="@+id/uppor_weapons" />
 
-
 </android.support.constraint.ConstraintLayout>

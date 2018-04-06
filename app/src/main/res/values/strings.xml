@@ -4,7 +4,6 @@
     <string name="action_connect">Connect</string>
     <string name="action_disconnect">Disonnect</string>
     <string name="action_language">Language</string>
-    <string name="action_language2">Language2</string>
     <string name="action_log">Log</string>
     <string name="action_about">About</string>
 
